@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
-const DB = process.env.DATABSE_CLOUD.replace('<PASSWORD>', process.env.DATABSE_PASSWORD)
-
+//const DB = process.env.DATABSE_CLOUD.replace('<PASSWORD>', process.env.DATABSE_PASSWORD)
+const DB = process.env.DATABSE_LOCAL
 mongoose.set('strictQuery', false)
 
 try {
