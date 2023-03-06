@@ -1,0 +1,27 @@
+{
+    "name": "DB_Example",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "nodemon server.js",
+        "start:prod": "NODE_ENV=production nodemon server.js",
+        "debug": "ndb server.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "dotenv": "^16.0.3",
+        "express": "^4.18.2",
+        "mongoose": "^6.10.0",
+        "nodemon": "^2.0.20",
+        "slugify": "^1.6.5",
+        "validator": "^13.9.0"
+    },
+    "devDependencies": {
+        "ndb": "^1.1.5"
+    }
+}
