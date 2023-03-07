@@ -19,7 +19,7 @@ exports.createTour = catchAsync(async (req, resp, next) => {
   // const tour = await newTour.save()
 
   //we also have another method
-
+ 
   const newTour = await TourModel.create(req.body);
   resp.status(201).json({
     success: true,
