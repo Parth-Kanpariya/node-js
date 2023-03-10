@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Express File Upload</title>
+  </head>
+  <body>
+    <h1>Express File Upload</h1>
+    <form method="POST" action="/addProduct" enctype="multipart/form-data">
+        <label for="Product_name"><b>Product name</b></label>
+          <input type="text" placeholder="Enter Product_name" name="Product_name" id="Product_name" required>
+      
+          <label for="Description"><b>Description</b></label>
+          <input type="text" placeholder="Enter Description" name="Description" id="Description" required>
+      
+          <label for="psw"><b>Category</b></label>
+          <input type="Category" placeholder="Enter Category" name="Category" id="Category" required>
+          <label for="pImage"><b>ProductImage</b></label>
+      <input type="file" name="myFile" />
+      <input type="submit" />
+    </form>
+  </body>
+</html>
