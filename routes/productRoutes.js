@@ -3,20 +3,19 @@ import productController from "../controller/productController.js";
 import authController from "../controller/authController.js";
 
 const router = express.Router();
-router.get('/product/:id', authController.protect, productController.findById)
-router.get("/product", authController.protect, productController.getProduct);
+router.get("/product/:id", authController.protect, productController.findById);
+router.get("/products", authController.protect, productController.getProduct);
 router.post(
-  "/addProduct",
-  
-  productController.addProduct
+    "/addProduct",
+    authController.protect,
+    productController.addProduct
 );
 router.get(
-  "/product/:category",
- 
-  productController.findByCategory
+    "/product",
+    authController.protect,
+    productController.findByCategory
 );
 
-router.get('/productPage', productController.productpage)
-
+router.get("/productPage", productController.productpage);
 
 export default router;
